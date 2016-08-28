@@ -70,7 +70,7 @@ status_t GrallocConsumer::lockNextBuffer() {
         }
     }
 
-    BufferItem b;
+    BufferQueue::BufferItem b;
 
     err = acquireBufferLocked(&b, 0);
     if (err != OK) {
